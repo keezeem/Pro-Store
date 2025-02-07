@@ -7,10 +7,13 @@ const Homepage = () => {
   }
 
   return (
-    <div className="space-y-8">
-      <h2 className="h2-bold">Latest Products</h2>
-      <ProductList title="Newest Arrivals" data={sampleData.products} limi={4} />
-    </div>
+    <>
+      <ProductList
+        data={sampleData.products}
+        title='Newest Arrivals'
+        limit={4}
+      />
+    </>
   );
 };
 
