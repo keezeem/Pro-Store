@@ -1,3 +1,3 @@
 import { Product } from '@prisma/client';
 
-export interface SampleProduct extends Omit<Product, 'id'> {}
+export type SampleProduct = Omit<Product, 'id'>
